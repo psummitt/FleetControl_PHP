@@ -1,8 +1,8 @@
 <?php
 
-define("DB_SERVER", "localhost");
-define("DB_USER", "webuser");
-define("DB_PASS", "secretpassword");
-define("DB_NAME", "globe_bank");
+const DB_SERVER = "localhost";
+const DB_USER = "webuser";
+const DB_PASS = "secretpassword";
+const DB_NAME = "FleetControl";
 
 ?>

@@ -10,6 +10,15 @@
         return $result;   
     }
 
+    function find_user() {
+        global $db;
+
+        $sql = "SELECT * FROM tblUsers ";
+        $result = mysqli_query($db, $sql);
+        confirm_result_set($result);
+        return $result;
+    }
+
     function find_all_pages() {
         global $db;
 
