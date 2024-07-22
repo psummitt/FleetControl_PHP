@@ -19,20 +19,35 @@
 <article>
     <div class="container text-center">
         <div class="row">
-            <h1>FleetControl</h1>
-            <h2>Your Online Vehicle Management System</h2>
+            <h1>Welcome to FleetControl</h1>
         </div>
-
     </div>
+</header>
+<article>
     <div class="row">
         <div class="col-4" id="img">
-            <img class="img-fluid" src="/public/img/Truck_368x368.jpg" alt="image of a truck">
+            <img class="img-fluid" src="public/img/Truck_368x368.jpg" alt="image of a truck">
         </div>
         <div class="col-8" id="content">
             <hr>
-            <h3>Welcome to FleetControl.</h3>
+            <h2>FleetControl</h2>
+            <hr>
+            <h3>Your Online Vehicle Management System</h3>
             <hr>
             <p>Please log in to view or add information about your vehicles.</p>
+            <hr>
+            <form action="/FleetControl/_private/authenticate.php" method="post">
+                <label for="username">
+                    <i class="fas fa-user"></i>
+                </label>
+                <input type="text" name="username" placeholder="Username" id="username" required>
+                <label for="password">
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <input type="submit" value="Login">
+            </form>
+            <hr>
         </div>
         <hr>
         <form action="/FleetControl/_private/authenticate.php" method="post">
@@ -49,6 +64,16 @@
         <hr>
     </div>
 </article>
-<?php include '/_private/shared/footer.php';?>
+<footer class="bg-dark link-light">
+    <div>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul>
+            <li><a href="mailto:paulmsummitt@gmail.com"><img src="https://res.cloudinary.com/dhfzm8v7y/image/upload/v1656777427/images/opened-email-envelope_icon-icons.com_70656_gx2u5j.png" style="color: white" title="e-mail" width="20" height="20">paulmsummitt@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/paul-m-summitt/" target="_blank" rel="noopener">
+                    <img src="https://res.cloudinary.com/dhfzm8v7y/image/upload/v1656777431/images/LinkedIn_Rounded_icon-icons.com_61573_fhhjjs.png" style="color: white" title="LinkedIn"  width="20" height="20">LinkedIn</a></li>
+        </ul>
+    <p id="textbottom">&copy; <?php echo date('Y'); ?> Paul M. Summitt</p>
+    </div>
+</footer>
 </body>
 </html>
