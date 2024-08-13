@@ -1,4 +1,6 @@
-<?php require_once('./_private/initialize.php'); ?>
+<!DOCTYPE html>
+<?php require("../_private/initialize.php"); ?>
+
 
 <?php $page_title = 'Staff Menu'; ?>
 <?php include(SHARED_PATH . '/header.php'); ?>
